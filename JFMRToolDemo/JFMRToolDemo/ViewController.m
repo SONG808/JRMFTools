@@ -30,7 +30,16 @@
     
 }
 - (void)addSubview{
+    UIView * redview = [[UIView alloc]init];
+    redview.backgroundColor = [UIColor redColor];
+    [self.view addSubview:redview];
     
+    [redview MYMAS_makeConstraints:^(MYMASConstraintMaker *make) {
+        make.left.MYMAS_equalTo(20);
+        make.width.MYMAS_equalTo(100);
+        make.top.MYMAS_equalTo(100);
+        make.height.MYMAS_equalTo(100);
+    }];
 }
 
 #pragma mark - ================================系统代理================================
