@@ -9,84 +9,98 @@
 #import "UIView+Frame.h"
 
 @implementation UIView (Frame)
-
-- (void)setX:(CGFloat)x {
+- (void)setJrmf_x:(CGFloat)jrmf_x
+{
     CGRect frame = self.frame;
-    frame.origin.x = x;
+    frame.origin.x = jrmf_x;
     self.frame = frame;
 }
-
-- (CGFloat)x {
+- (CGFloat)jrmf_x
+{
     return self.frame.origin.x;
 }
 
-- (void)setY:(CGFloat)y {
+- (void)setJrmf_y:(CGFloat)jrmf_y
+{
     CGRect frame = self.frame;
-    frame.origin.y = y;
+    frame.origin.y = jrmf_y;
     self.frame = frame;
 }
 
-- (CGFloat)y {
+- (CGFloat)jrmf_y
+{
     return self.frame.origin.y;
 }
 
-- (void)setOrigin:(CGPoint)origin {
+- (void)setJrmf_origin:(CGPoint)jrmf_origin
+{
     CGRect frame = self.frame;
-    frame.origin = origin;
+    frame.origin = jrmf_origin;
     self.frame = frame;
 }
 
-- (CGPoint)origin {
+- (CGPoint)jrmf_origin
+{
     return self.frame.origin;
 }
 
-- (void)setWidth:(CGFloat)width {
+- (void)setJrmf_width:(CGFloat)jrmf_width
+{
     CGRect frame = self.frame;
-    frame.size.width = width;
+    frame.size.width = jrmf_width;
     self.frame = frame;
 }
 
-- (CGFloat)width {
+- (CGFloat)jrmf_width
+{
     return self.frame.size.width;
 }
 
-- (void)setHeight:(CGFloat)height {
+- (void)setJrmf_height:(CGFloat)jrmf_height
+{
     CGRect frame = self.frame;
-    frame.size.height = height;
+    frame.size.height = jrmf_height;
     self.frame = frame;
 }
 
-- (CGFloat)height {
+- (CGFloat)jrmf_height
+{
     return self.frame.size.height;
 }
 
-- (void)setSize:(CGSize)size {
+- (void)setJrmf_size:(CGSize)jrmf_size
+{
     CGRect frame = self.frame;
-    frame.size = size;
+    frame.size = jrmf_size;
     self.frame = frame;
 }
 
-- (CGSize)size {
+- (CGSize)jrmf_size
+{
     return self.frame.size;
 }
 
-- (void)setCenterX:(CGFloat)centerX {
+- (void)setJrmf_centerX:(CGFloat)jrmf_centerX
+{
     CGPoint center = self.center;
-    center.x = centerX;
+    center.x = jrmf_centerX;
     self.center = center;
 }
 
-- (CGFloat)centerX {
+- (CGFloat)jrmf_centerX
+{
     return self.center.x;
 }
 
-- (void)setCenterY:(CGFloat)centerY {
+- (void)setJrmf_centerY:(CGFloat)jrmf_centerY
+{
     CGPoint center = self.center;
-    center.y = centerY;
+    center.y = jrmf_centerY;
     self.center = center;
 }
 
-- (CGFloat)centerY {
+- (CGFloat)jrmf_centerY
+{
     return self.center.y;
 }
 
